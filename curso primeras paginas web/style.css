@@ -136,15 +136,58 @@ form{
     margin: 40px 0;
 }
 
-form label{
+form label, form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
 
-form input{
+/*en css podemos separar por comas para aplicar los mismos cambios en otras areas*/
+.input-padron{
     display: block;
     margin: 0 0 20px;
-    padding: 10px 25px;
+    padding: 10px 25px; 
     width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    /*transition hace que se demore un poco mas elo cambio que le pedimos, en este caso el all osea todas las propiedades*/
+    transition: 1s all;
+    /*cursor hace que cambie el cursor justo cuando nos posicionamos en ese lugar*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    /*transform permite que cuando nos paremos en el lugar aumenten todas las dimensiones en la cantidad que le indiquemos*/
+    transform: scale(1.1);
+     
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    /*definimos nuestras lineas*/
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
