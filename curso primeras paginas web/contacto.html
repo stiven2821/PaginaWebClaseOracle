@@ -45,6 +45,29 @@
                 <label for="telefono">Telefono</label>
                 <input type="text" id="telefono">
 
+                <label for="mensaje">mensaje</label>
+                <!--con textarea podemos hacer una caja de texto-->
+                <textarea id="mensaje" cols="70" rows="10"></textarea>
+
+                <div>
+                    <p>¿Cómo le gustaria que lo contactemos?</p>
+
+                    <label for="radio-email">Email</label>
+                    <!--con input radio podemos hacer casillas que se seleccionen-->
+                    <input type="radio" name="contacto" value="email" id="radio-email">
+                    
+                    <label for="radio-telefono">Telefono</label>
+                    <!--con name="contacto" hacemos que solo se pueda seleccionar uno ya que pertenecen al mismo tipo-->
+                    <input type="radio" name="contacto" value="telefono" id="radio-telefono">
+
+                    <label for="radio-whatsapp">WhatsApp</label>
+                    <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp">
+
+                </div>
+
+                <!--con checkbox hacemos una cajita para marcar, poniendolo dentro del label directamente los relacionamos-->
+                <label><input type="checkbox">Le gustaria recibir novedades de la barberia Alura?</label>
+
                 <!--con submit nos crea un boton-->
                 <input type="submit" value="Enviar formulario">
 
