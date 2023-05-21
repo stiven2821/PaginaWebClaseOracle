@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>contacto - Barberia Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.png"></h1>
+                <!--etiqueta que sirve para colocar nuestro panel de navegacion-->
+                <nav>
+                    <ul>
+                        <!--con la etiqueta <a> podemos desplazarnos hacia otra pagina distinta, no solo de nuestro proyecto, tambien paginas externas-->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            
+        </header>
+
+        <main>
+            <!--esta etiqueta form es especifica para formularios-->
+            <form>
+                <!--con label aparece el texto-->
+                <!--con el for y id nos permite referenciar y justar aun mejor nuestro label e input-->
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <!--lo que hace este input con text es crear una caja de texto-->
+                <input type="text" id="nombreapellido">
+
+                <label for="correoelectronico">Correo Electronico</label>
+                <input type="text" id="correoelectronico">
+
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono">
+
+                <!--con submit nos crea un boton-->
+                <input type="submit" value="Enviar formulario">
+
+            </form> 
+
+        </main>
+
+        <footer>
+            <img src="imagenes/logo-blanco.png">
+            <p class="copyright">&copy Copyright Barberia Alura - 2022</p>
+        </footer>
+        
+    </body>
+
+</html>

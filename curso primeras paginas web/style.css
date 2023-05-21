@@ -1,0 +1,150 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    /*con esto podemos modificar la posicion*/
+    position: absolute;
+    top: 110px;
+    right: 0px;
+
+}
+
+nav li{
+    /*aca le decimos al navegador que no ocupe toda la pagina, sino que ocupara el tamaño indicado*/
+    display: inline;
+    /*con esto podemos colocarle un margen a nuestras palabras por ejm para que no esten tan pegadas*/
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    /*con esto podemos convertir el texto por ejm a mayuscula*/
+    text-transform: uppercase;
+    color: #000000;
+    /*con esto podemos ponerle un estilo, por ejm negrilla*/
+    font-weight: bold;
+    font-size: 22px;
+    /*asi le quitamos el subrayado al texto*/
+    text-decoration: none;
+}
+
+/*hover captura el movimiento del mouse*/
+nav a:hover{
+    /*aca cuando nos posicionemos en el lugar indicado cambiara de color*/
+    color: #c78c19;
+    /*aca le volvemos a poner la linea cuando estemos encima*/
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    /*tamaño de la caja, ejm los 20 px no van a sobrepasar los 30% de ancho*/
+    box-sizing: border-box;
+    /*color de borde
+    border-color: #000000;
+    /*ancho del borde
+    border-width: 2px;
+    /*estilo del borde
+    border-style:solid;*/
+
+    /*esta es una forma simplificada de colocar el borde, el orden aca si importa*/
+    border: 2px solid #000000;
+
+    /*aqui configuramos los radios del borde, ejm para ponerlos redondos
+    border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 50px;*/
+
+    /*aca se hace lo mismo pero mas resumido, se configura el radio de los bordes, si quiero tamaños diferentes coloco varios numeros en la misma variable, si son iguales solo con 1*/
+    border-radius: 10px;
+    
+}
+
+.productos li:hover{
+    color: #c78c19;
+    border-color: #c78c19;
+    border-width: 5px;
+}
+
+.productos li:active{
+    color: #088c19;
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+/*aca lo que hacemos es indicar que afecte desde dentro del li al h2*/
+.productos li:hover h2{
+    font-size: 33;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+footer{
+    text-align: center;
+    /*asi podemos poner imagenes en el background*/
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*ESTILOS PAGINA DE CONTACTOS*/
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}

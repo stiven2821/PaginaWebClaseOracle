@@ -1,0 +1,60 @@
+/* Este archivo .css me sirve para guardar todos los estilos */
+
+/*para mantener buenas practicas es bueno hubicarlos de forma jerarquica, por ejm body el primero ya que es el padre de p */
+
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background: #CCCCCC;
+    /*modificar espaciamiento interno*/
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+/*aca me estoy referenciando mas especificamente en que lugar quiero hacer el cambio*/
+em strong{
+    color: red;
+}
+
+/*va a mostrar solo en donde este esta referencia, la referencia empieza con #*/
+#mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+/*se modifica la clase, empieza con un punto(.)*/
+.items{
+    font-style: italic;
+}
+
+
+ul{
+    /*con inline-block le estamos diciendo que ocupe solo el espacio de su contenido y que los espaciamientos de alrededor se puedan ajustar*/
+    display: inline-block;
+    /*sirve para alinear*/
+    vertical-align: top;
+    width: 20%;
+    /*para poder colocar espacio y definir anchura*/
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}

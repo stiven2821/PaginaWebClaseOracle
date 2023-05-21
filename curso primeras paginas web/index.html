@@ -1,0 +1,78 @@
+<!--esta es la forma de declarar que mandamos un contenido de html 5, con esto nuestro navegador sabe que le pasamos una pagina de html version 5-->
+<!DOCTYPE html>
+<!--este es el inicio de lo que la pagina mostrara como contenido, con lang="" definimos en que idioma se esta haciendo nuestra pagina -->
+<html lang="es">
+
+<!--en head se coloca las etiquetas informativas-->
+    <head>
+        <!--permite que cualquier navegador reconozca los caracteres especiales-->
+        <meta charset="UTF-8">
+
+        <!--le ponemos titulo en la ventana del navegador a nuestra pagina-->
+        <title>Barberia Alura</title>
+        <!--esta es la forma de referenciar nuestro archivo style.css que contiene nuestros estilos-->
+        <link rel="stylesheet" href="style-home.css">
+
+        <!--esta es una forma para definirle a TODAS las etiquetas p estilos -->
+        <!--<style>
+            
+            p{
+                text-align: center;
+            }
+
+        </style> -->
+
+    </head>
+    <!--es body colocamos todas las etiqutas de contenido de la pagina-->
+    <body>
+
+        <!--para encabezados-->
+        <header>
+            <h1 class="titulo-principal">Barberia Alura</h1>
+        </header>
+
+        <!--colocar imagen-->
+        <img id="banner" src="banner/banner.jpg">
+        <!--los div sirve para dividir nuestro codigo en bloque-->
+        <div class="principal">
+
+            <!--La etiqueta h sirve para los titulos, hay 6 tipos de titulos con h-->
+            <!--style defino un estilo a la pagina-->
+            <h2 class="titulo-centralizado">Sobre la Barbería Alura</h2>
+            
+            <!--la etiqueta p sirve para especificar que son parrafos, la etiqueta strong sirve para colocar palabras en negrilla-->
+            <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+
+            <!--la etiqueta em sirve para poner en italica las palabras-->
+            <!--el selector de id sirve para ser un identificadore especifico de la etiqueta p-->
+            <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+
+            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+
+        </div>
+
+        <div class="diferenciales">
+
+            <h3 class="titulo-centralizado">Diferenciales</h3>
+            <!--sirve para listas ordenadas
+            <ol></ol>-->
+            <!--sirve para listas no ordenadas-->
+            <ul>
+                <!--el li sirve para ubicar contenido en listas-->
+                <!--las clases sirven para alterar las del mismo nombre-->
+                <li class="items">Atencion personalizada para los clientes</li>
+                <li class="items">Espacio diferenciado</li>
+                <li class="items">Localizacion</li>
+                <li class="items">Profesionales calificados</li>
+
+            </ul>
+
+            <img src="diferenciales/diferenciales.jpg" class="imagenDiferenciales">
+
+        </div>
+
+        
+
+    </body>
+
+</html>
